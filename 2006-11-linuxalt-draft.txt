@@ -1,0 +1,82 @@
+Mobilní telefony v Linuxu
+Gammu a Wammu
+
+Michal Čihař
+<michal@cihar.com>
+
+----
+
+Co uslyšíte?
+
+- Komunikace s telefonem obecně
+- Programy pro Linux
+- Gammu a Wammu
+
+----
+
+Komunikace s telefonem - připojení
+
+- Kabel
+    - Sériový
+    - USB
+- Infraport
+- Bluetooth
+
+----
+
+Komunikace s telefonem - AT příkazy
+
+- "standard" 
+- AT[příkaz], např: ATI, AT+CSQ
+- minimální sada příkazů standardizovaná
+- mnohý výrobce má svoje rozšíření
+    - Siemens, Sony-Ericsonn, Sagem, Alcatel, Motorola
+- Nokia implementuje naprosté minimum
+
+--- 
+
+Komunikace s telefonem - OBEX
+
+- standard, vznikl pro IrDA
+- chybová implementace
+- přístup k multimédiím
+- přístup k datům
+
+----
+[rozdělit?]
+
+Komunikace s telefonem - Proprietární
+
+- Nokia
+    - DCT3/4
+    - obojí má open source implementace
+- Symbian
+    - není implementován
+    - používá se gnapplet
+
+----
+
+Komunikace s telefonem - SyncML
+
+- standard pro synchronizaci
+- velmi dobrá podpora
+- jen novější a "chytřejší" telefony
+
+----
+
+Linux a mobily
+
+Co chceme?
+- Synchronizaci
+- Úpravu dat
+- Přístup k multimédiím
+
+----
+
+Linux a synchronizace
+
+OpenSync - http://www.opensync.org/
+- SyncML, OBEX, ...
+- KDE (KitchenSync), GNOME (Evolution), Sunbird, Google Calendar
+
+

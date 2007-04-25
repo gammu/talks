@@ -1,0 +1,65 @@
+Komunikace s telefonem - připojení
+
+Sériový kabel
+
+- Většinou bez problémů, nepotřebuje ovladače
+- Jen u starších telefonů
+
+USB kabel
+
+- Problém s ovladači, několik chipsetů, které jsou různě podporované
+- U nových telefonů
+
+Infraport
+
+- Snadné nastavení
+- IrDA adaptéry jsou podporované
+- Telefon musí mít přímou viditelnost
+
+Bluetooth
+
+- Je potřeba trochu nastavení (distribuce obvykle usnadní)
+- Dobrá podpora Linuxu (mnohdy lepší než ve Windows)
+- Není potřeba viditelnost
+
+========================================
+
+Komunikace s telefonem - protokoly
+
+AT příkazy
+- stadardizované ETSI, lze stáhnout specifikace (lehce chaotické)
+- syntaxe AT[příkaz]
+    - ATI - informace o telefonu
+    - AT+CSQ - síla signálu
+- mnohý výrobce má svoje rozšíření
+    - Siemens, Sony-Ericsonn, Sagem, Alcatel, Motorola
+- Nokia implementuje naprosté minimum
+
+OBEX
+- původně přenos souborů přes IrDA
+- nyní se používá i na Bluetooth a připojení přes kabel, SyncML a bůhví co ještě
+- přístup na filesystém telefonu (MP3, videa, fotky, etc.)
+- někdy i možnost stáhnutí dat ve speciálním jmenném prostoru telecom
+
+Proprietární
+- nejvíce viditelná je Nokia
+    - DCT3/4 podle platformy na které je telefon postaven
+    - neustále se vyvíjí, nové telefony mění a rozšiřují protokol
+- Symbian
+    - největší současný problém
+    - používá se aplet běžící na telefonu, kde přes API může přistupovat ke všemu
+    - vlastní protokol navržený vývojáři Gnokii
+
+SyncML
+- navržen pro synchronizaci
+- standardizovaný
+- existuje open source implementace - v rámci OpenSyncu
+- možná cesta do budoucna
+
+========================================
+
+Linux a kabely
+
+- většinou nějaký USB/RS232 převodník
+- ovladače pro některé zatím neexistují
+- je dobré ověřit funkčnost
